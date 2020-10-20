@@ -1,11 +1,12 @@
 # Author PT 10/19/20
+# Integer division is //
 
 print("Think of a date in the past...")
 x = int(input("Enter the year of the date: "))
 m = int(input("Enter the month of the date: "))
 q = int(input("Enter the day of the month: "))
 
-j = (x / 100)
+j = (x // 100)
 k = (x % 100)
 
 if m == 1:
@@ -13,7 +14,7 @@ if m == 1:
 if m == 2:
     int(m + 12)
 
-h = int((q + ((26 * (m + 1)) / 10) + k + (k / 4) + (j / 4) + (5 * j)) % 7)
+h = int((q + ((26 * (m + 1)) // 10) + k + (k // 4) + (j // 4) + (5 * j)) % 7)
 
 if h == 0:
     print(m, "/", q, "/", x, "was a Saturday")
