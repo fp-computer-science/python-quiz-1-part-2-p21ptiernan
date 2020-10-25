@@ -1,0 +1,3 @@
+Your jan/feb correction does not adjust the year.
+Your j calculation does not use floor (integer) division.
+Your equation does not use floor (integer) division.
